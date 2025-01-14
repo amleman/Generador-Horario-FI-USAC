@@ -16,7 +16,7 @@ const App = () => {
   const [extraInfo, setExtraInfo] = useState([]);
   const [selectedCourseName, setSelectedCourseName] = useState("");
   const [removedEntries, setRemovedEntries] = useState([]);
-  const apiUrl = 'api-generador-horario-fi-usac-production.up.railway.app';
+  const apiUrl = 'https://api-generador-horario-fi-usac-production.up.railway.app';
 
   const addCourse = (course) => {
     if (!selectedCourses.includes(course)) {
