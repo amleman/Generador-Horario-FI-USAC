@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Altura total de la ventana */
+    background-color: #c9c9c9; /* Fondo claro */
+  }
+  
+  .container {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    text-align: center; /* Centra texto */
+  }
+.fixed-left {
+  position: fixed;
+  left: 0;
+  top: 97%; /* Centrado verticalmente */
+  transform: translateY(-50%);
+  background-color: #282c34; /* Fondo oscuro */
+  color: #ffffff; /* Texto blanco */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 14px; /* Tamaño de fuente */
+  font-family: Arial, sans-serif; /* Fuente */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Sombra */
+  border-right: 2px solid #61dafb; /* Línea decorativa */
+  z-index: 1000; /* Superposición alta */
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgb(17, 119, 142);
+    color: white;
+}
+.beta-notice {
+  background-color: #f9f9f9; /* Fondo claro */
+  color: #333; /* Texto oscuro */
+  border: 2px solid #61dafb; /* Borde azul */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  margin: 20px auto; /* Márgenes superior e inferior, centrado horizontal */
+  width: 90%; /* Ancho relativo */
+  max-width: 600px; /* Ancho máximo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  text-align: center; /* Centrado del texto */
+  font-family: 'Arial', sans-serif; /* Fuente */
+}
+
+.beta-notice h2 {
+  font-size: 24px; /* Tamaño del título */
+  color: #61dafb; /* Azul claro */
+  margin-bottom: 10px; /* Espaciado debajo del título */
+}
+
+.beta-notice p {
+  font-size: 16px; /* Tamaño del texto */
+  line-height: 1.5; /* Altura de línea */
+  margin: 0; /* Sin margen adicional */
+}
+.estilo-input{
+  padding: 8px;
+  border: 2px solid #555; 
+  border-radius: 10px; 
+  appearance: none; /* Para ocultar el icono nativo del select */ 
+  background-color: #f9f9f9; 
+  color: #333; 
+  cursor: pointer; 
+  outline: none;
+}
+.estilo-input:focus{
+  background-color: #a4b2be;
+}
+.table-container {
+  overflow-x: auto; /* Habilita el scroll horizontal */
+  width: 100%; /* El contenedor ocupa todo el ancho disponible */
+}
+
+table {
+  width: 1200px; /* Ancho original de la tabla */
+  border-collapse: collapse;
+}
+@media (max-width: 767px) {
+  .selector{
+    text-align: center; /* Centra texto */
+  }
+  .buscador{
+    margin-bottom: 15px;
+  }
+  .selector-cursos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #course{
+    max-width: 15em;
+    margin-left: 7px;
+    margin-right: 10px;
+  }
+  #course option{
+    font-size: smaller;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .selector{
+    text-align: center; /* Centra texto */
+  }
+  #course{
+    max-width: 30em;
+    margin-right: 15px;
+  }
+  #course option{
+    font-size: small;
+  }
+}
+@media (min-width: 1024px) {
+  .buscador{
+    margin-right: 15px;
+  }
+  .selector-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .selector{
+    text-align: center; /* Centra texto */
+  }
+  #course{
+    max-width: 35em;
+    margin-right: 15px;
+  }
+  #course option{
+    font-size: 12px;
+  }
+}
+.button-add {
+  background-color: #b78e13; /* Tomate */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-add:hover {
+  background-color: #fcc92f; /* Naranja Rojo */
+  transform: scale(1.1);
+}
+
+.button-add:disabled {
+  background-color: #d3d3d3; /* Gris Claro */
+  cursor: not-allowed;
+}
+.linea-divisoria {
+  border: none; /* Elimina el borde predeterminado */
+  border-top: 2px solid #000; /* Define el estilo de la línea */
+  width: 80%; /* Ancho de la línea */
+  margin: 20px auto; /* Márgenes superior/inferior y centrado horizontal */
+}
+.horario-editor p{
+  color: #b71f01;
+  font-weight: bold;
+}
+.seleccion-cursos select{
+  margin: 0 15px 10px 8px;
+}
+ul {
+  list-style: none; /* Elimina los puntos/números */
+  padding: 0; /* Elimina el relleno del contenedor <ul> */
+  margin: 0; /* Elimina el margen del contenedor <ul> */
+}
+li {
+  display: inline-block; /* Hace que las cajitas estén en línea horizontal si hay varias */
+  background-color: rgb(53, 189, 223); /* Fondo aqua */
+  color: black; /* Texto negro (puedes ajustarlo si lo necesitas) */
+  padding: 10px 20px; /* Espaciado interno para que se vea como una cajita */
+  margin: 5px; /* Espacio entre cajitas */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para un efecto flotante */
+  border: 1px solid #ccc; /* Borde sutil */
+  text-align: center; /* Centra el texto dentro de la caja */
+  font-family: Arial, sans-serif; /* Fuente para mejor presentación */
+  cursor: pointer; /* Cambia el cursor al pasar sobre la cajita */
+  transition: all 0.3s ease; /* Suaviza las transiciones en hover */
+}
+
+li:hover {
+  background-color: #00d9d9; /* Cambia el color en hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Aumenta la sombra al pasar */
+  transform: scale(1.05); /* Efecto de agrandamiento */
+}
+.laboratorio{
+  background-color: rgb(5, 86, 107);
+  color: rgb(225, 225, 225);
+}
+.botones-modificadores button{
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+.info-extra{
+  margin-bottom: 30px;
+}
+.info-extra label{
+  font-size: large;
+  font-weight: bold;
+}
