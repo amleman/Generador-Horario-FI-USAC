@@ -60,6 +60,22 @@ body {
   line-height: 1.5; /* Altura de línea */
   margin: 0; /* Sin margen adicional */
 }
+.beta-notice a {
+  display: inline-block; /* Para que se comporte como un botón */
+  margin-top: 15px; /* Espaciado superior */
+  padding: 10px 20px; /* Espaciado interno */
+  background-color: #61dafb; /* Fondo azul claro */
+  color: #fff; /* Texto blanco */
+  text-decoration: none; /* Sin subrayado */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Texto en negrita */
+  transition: background-color 0.3s ease; /* Animación suave al pasar el cursor */
+}
+
+.beta-notice a:hover {
+  background-color: #21a1f1; /* Color más oscuro al pasar el cursor */
+}
 .estilo-input{
   padding: 8px;
   border: 2px solid #555; 

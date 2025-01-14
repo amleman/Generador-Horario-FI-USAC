@@ -216,6 +216,14 @@ const App = () => {
         <p>
           Estamos en una versión beta inicial del programa. ¡Todos los comentarios son bienvenidos! Tu opinión nos ayuda a mejorar.
         </p>
+        <a 
+          href="https://forms.gle/h1Nv6qpSgWtvbxJN8" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="beta-link"
+        >
+          Haz clic aquí para enviar tus comentarios
+        </a>
       </div>
       <div className="fixed-left">
         Creado por Anthony
