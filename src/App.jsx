@@ -16,6 +16,7 @@ const App = () => {
   const [extraInfo, setExtraInfo] = useState([]);
   const [selectedCourseName, setSelectedCourseName] = useState("");
   const [removedEntries, setRemovedEntries] = useState([]);
+  const apiUrl = 'https://mi-api-flask-12345.up.railway.app';
 
   const addCourse = (course) => {
     if (!selectedCourses.includes(course)) {
@@ -32,7 +33,7 @@ const App = () => {
       const cursos_disponibles = selectedCourses.map(course => course.slice(0, 4));
       const requestBody = { cursos_disponibles };
 
-      const response = await fetch('https://api-generador-horario-fi-usac-production.up.railway.app', {
+      const response = await fetch(`${apiUrl}/horario`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(requestBody),
