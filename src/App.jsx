@@ -32,7 +32,7 @@ const App = () => {
       const cursos_disponibles = selectedCourses.map(course => course.slice(0, 4));
       const requestBody = { cursos_disponibles };
 
-      const response = await fetch('http://127.0.0.1:5000/horario', {
+      const response = await fetch('https://api-generador-horario-fi-usac-production.up.railway.app', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(requestBody),
